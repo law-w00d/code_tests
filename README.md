@@ -6,6 +6,11 @@ A pointer to the function used to run the test; Any arguments the function needs
 
 The command line output will display a basic summary of each test, whether it passed or failed, the expected value, and the actual return value.
 
+## Recent changes:
+Implemented a basic clock timer to time functions, displayed in milliseconds.
+
+The code for this needs to be refactored - currently it is just a proof of concept.
+
 ## Limitations:
 I was experimenting with a more universal "test_function" function that can operate on a function with any return type, which would be passed a variable agrument list.
 
@@ -30,5 +35,3 @@ Finally, main.c is where you call the test_functions and specify the actual argu
 This is my first iteration of this program (which I only spent 15 minutes on) so there is much room for improvement.
 
 In the future I would like to make the test functions as broad as possible so that a new test_function doesn't have to be created for each different function you want to test.
-
-I would also like to implement a timer so that the user may track execution time of a function (and compare times between different versions of the same function).
